@@ -48,7 +48,7 @@ header > p{
     font-family: var(--font-padrao);
     min-width: 320px;
     max-width: 400px;
-    margin: auto;
+    margin: 0;
     padding: 0px 30px 30px 30px;
 }
 nav{
