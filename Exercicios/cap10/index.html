@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>Tente abrir estas imagens em varios dispositivos diferentes ou simplesmente 
+        aumente e diminua a tela do navegador. </p>
+    
+    <picture>
+        <source media="(max-width: 700px)" srcset="midias/img/helip.png" type="image/png">
+        <source media="(max-width: 1100px)" srcset="midias/img/helim.png" type="image/png">
+        <img src="midias/img/helig.png" alt="imagens flexiveis">
+    </picture>
+
+    <h1>Reproduzindo audios</h1>
+    <p>Como reproduzir audios mp3 no navegador</p>
+
+        <audio src="midias/audio/Monthaholic-Schwartzy.mp3" controls autoplay></audio>
+
+        <audio preload="metadata" autoplay controls loop>
+        <source src="midias/audio/Monthaholic-Schwartzy.mp3" type="audio/mp3">
+        <source src="midias/audio/Monthaholic-Schwartzy.wav" type="audio/wav">
+        <source src="midias/audio/Monthaholic-Schwartzy.ogg" type="audio/ogg">
+        <p>Infelizmente seu navegador nao pode reproduzir o audio. 
+            <a href="midias/audio/Monthaholic-Schwartzy.mp3"> 
+                Clique no link para baixar o audio.</a></p>
+    </audio>
+
+    <h1>Colocando Video na Pagina</h1>
+    <p>Apresentando videos com hospedagem interna.</p>
+
+    <video width="560" poster="midias/img/imgvideo1.png" controls loop>
+        <source src="midias/video/video1.mp4.mp4" type="video/mp4">
+        <source src="midias/video/Video1.mkv.mkv" type="video/mkv">
+        <source src="midias/video/video1.webm.webm" type="video/webm">
+        <p>Infelismente seu navegador nao pode reproduzir o video <a href="midias/video/video1.mp4.mp4">
+            Clique aqui para download do video.</a></p>
+    </video>
+
+    <p>Apresentando videos com hospedagem externa youtube.</p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/BVQWBbPA4sc?si=c_oR_Kq5PNn0UQsQ" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen></iframe>
+    
+    <p>Apresentando videos com hospedagem externa vimeo.</p>
+
+   <iframe src="https://player.vimeo.com/video/886499913?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+   width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+   title="The Colony Hotel"></iframe>
+
+
+</body>
+</html>
