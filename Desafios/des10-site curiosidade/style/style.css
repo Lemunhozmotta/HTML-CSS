@@ -46,8 +46,8 @@ header > h1{
 }
 header > p{
     font-family: var(--font-padrao);
-    width: 500px;
-    height: auto;
+    min-width: 320px;
+    max-width: 400px;
     margin: auto;
     padding: 0px 30px 30px 30px;
 }
@@ -103,14 +103,14 @@ div.video{
     margin: 0px -20px 30px -20px;
     padding: 20px;
     padding-bottom: 57%;
-    position: relative;s
+    position: relative;
 }
 div.video > iframe{
-    position: absolute;
+    position: absolut;
     top: 5%;
     left: 5%;
-    width: 90%;
-    height: 90%;
+    width: 85%;
+    height: 55%;
 }
 article > h1{
     font-family: var(--font-android);
