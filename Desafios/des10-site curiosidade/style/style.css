@@ -46,10 +46,11 @@ header > h1{
 }
 header > p{
     font-family: var(--font-padrao);
-    min-width: 320px;
+    min-width: 315px;
     max-width: 400px;
-    margin: 0;
-    padding: 0px 30px 30px 30px;
+    margin: auto;
+    padding: 0px 15px 30px 15px;
+    text-shadow: 2px 2px 0px black(0, 0, 0, 0.192);
 }
 nav{
     background-color: #092616;
