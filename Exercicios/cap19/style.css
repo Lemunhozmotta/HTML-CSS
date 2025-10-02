@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div.container{
+    display: block;
+    background-color: rgb(221, 186, 133);
+}
+div.containt{
+    display: inline-block;
+    border: 10px black;
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    color: blue;
+    text-align: center;
+}
+div#cont1{
+    background-color: aqua;
+
+}
+div#cont2{
+    background-image: linear-gradient(to bottom, yellow, rgb(211, 158, 59));
+    
+}
+div#cont3{
+    background-image: url('img/pattern003.png');
+    
+}
