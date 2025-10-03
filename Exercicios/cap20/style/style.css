@@ -1,0 +1,77 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;    
+    font-family: Arial, Helvetica, sans-serif;
+}
+html body{
+    background-color: black;
+    min-height: 100vh;
+    
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+.menu {
+    display: flex;
+}
+.menu li {
+    margin-left: 10px;
+}
+.menu li a {
+    display: block;
+    padding: 10px;
+    
+}
+li a {
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-right: 30px;
+    line-height: 20px;
+    
+}
+section.imagem{
+    background-color: rgb(54, 54, 54);
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 30px;
+    color: white;  
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.692);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+section.conteudo{
+    background-color: white;
+}
+section#img01{
+    background-image: url('/Exercicios/cap20/img/h160-01.jpg');
+    background-position: center center;
+    
+}
+section#img02{
+    background-image: url('/Exercicios/cap20/img/h160-02.jpg');
+    background-position: center center;
+    
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
