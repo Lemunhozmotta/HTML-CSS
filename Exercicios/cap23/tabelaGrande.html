@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela com Cabeçalho e Rodapé</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption{
+            background-color: rgba(128, 128, 128, 0.733);
+            text-align: center;
+            font-size: 1.2em;
+        }
+        table{
+            background-color: antiquewhite;
+            position: relative;
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+        }
+        td, th{
+            border: 1px solid black;
+        }
+        td.num{
+            text-align: right;
+            width: 110px;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+
+        }
+        
+        tbody > tr:nth-child(even){
+            background-color: rgba(128, 128, 128, 0.582);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Tabela Populacional</caption>
+       <thead>
+        <tr>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+            <td>São Paulo</td>
+            <td class="num"> 110.526.213</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="num"> 195.568.632</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num"> 160.526.213</td>
+        </tr>
+        <tr>
+            <td>Goiania</td>
+            <td class="num"> 100.589.632</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td class="num"> 80.1986.213</td>
+        </tr>
+        <tr>
+            <td>Santa Catarima</td>
+            <td class="num"> 97.368.632</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td class="num"> 110.526.213</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="num"> 195.568.632</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num"> 160.526.213</td>
+        </tr>
+        <tr>
+            <td>Goiania</td>
+            <td class="num"> 100.589.632</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td class="num"> 80.1986.213</td>
+        </tr>
+        <tr>
+            <td>Santa Catarima</td>
+            <td class="num"> 97.368.632</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td class="num"> 110.526.213</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="num"> 195.568.632</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num"> 160.526.213</td>
+        </tr>
+        <tr>
+            <td>Goiania</td>
+            <td class="num"> 100.589.632</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td class="num"> 80.1986.213</td>
+        </tr>
+        <tr>
+            <td>Santa Catarima</td>
+            <td class="num"> 97.368.632</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td class="num"> 110.526.213</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="num"> 195.568.632</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num"> 160.526.213</td>
+        </tr>
+        <tr>
+            <td>Goiania</td>
+            <td class="num"> 100.589.632</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td class="num"> 80.1986.213</td>
+        </tr>
+        <tr>
+            <td>Santa Catarima</td>
+            <td class="num"> 97.368.632</td>
+        </tr>
+       </tbody>
+       <tfoot>
+        <tr>
+            <th scope="row">total população:</th>
+            <td class="num"><strong>977.124.236</strong></td>
+        </tr>
+       </tfoot>
+    </table>  
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, obcaecati, totam unde nam consectetur dolorum esse, maxime dolore adipisci corrupti natus. Totam consectetur ullam eius natus explicabo sunt id fuga!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, obcaecati, totam unde nam consectetur dolorum esse, maxime dolore adipisci corrupti natus. Totam consectetur ullam eius natus explicabo sunt id fuga!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, obcaecati, totam unde nam consectetur dolorum esse, maxime dolore adipisci corrupti natus. Totam consectetur ullam eius natus explicabo sunt id fuga!
+        
+    </p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, obcaecati, totam unde nam consectetur dolorum esse, maxime dolore adipisci corrupti natus. Totam consectetur ullam eius natus explicabo sunt id fuga!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, obcaecati, totam unde nam consectetur dolorum esse, maxime dolore adipisci corrupti natus. Totam consectetur ullam eius natus explicabo sunt id fuga!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, obcaecati, totam unde nam consectetur dolorum esse, maxime dolore adipisci corrupti natus. Totam consectetur ullam eius natus explicabo sunt id fuga!
+        
+    </p> 
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, obcaecati, totam unde nam consectetur dolorum esse, maxime dolore adipisci corrupti natus. Totam consectetur ullam eius natus explicabo sunt id fuga!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, obcaecati, totam unde nam consectetur dolorum esse, maxime dolore adipisci corrupti natus. Totam consectetur ullam eius natus explicabo sunt id fuga!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, obcaecati, totam unde nam consectetur dolorum esse, maxime dolore adipisci corrupti natus. Totam consectetur ullam eius natus explicabo sunt id fuga!
+        
+    </p> 
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, obcaecati, totam unde nam consectetur dolorum esse, maxime dolore adipisci corrupti natus. Totam consectetur ullam eius natus explicabo sunt id fuga!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, obcaecati, totam unde nam consectetur dolorum esse, maxime dolore adipisci corrupti natus. Totam consectetur ullam eius natus explicabo sunt id fuga!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, obcaecati, totam unde nam consectetur dolorum esse, maxime dolore adipisci corrupti natus. Totam consectetur ullam eius natus explicabo sunt id fuga!
+        
+    </p> 
+</body>
+</html>
