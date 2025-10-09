@@ -4,31 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario 01</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        fieldset.dcadastro {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+        }
+        label {
+            display: inline-block;
+            width: 100px;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: calc(100% - 120px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            margin-right: 10px;
+        }
+        input[type="reset"] {
+            background-color: #dc3545;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <h1>Meu primeiro formulario</h1>
+    <h1>Formulario para Cadastro</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
-        <p><label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome" title="Digite seu nome" placeholder="Digite seu nome" required size="25">
-        </p>
-        <p><label for="iapelido">Apelido:</label>
-            <input type="text" name="apelido" id="iapelido" title="Como devo te chamar?" placeholder="Como devo te chamar?" required>
-        </p>
-        <p><label for="iemail">E-mail:</label>
-            <input type="email" name="email" id="iemail" title="Digite seu e-mail" placeholder="Digite seu e-mail" required>
-        </p>        
-        <p>
-            <label for="iusuario">Usuario:</label>
-            <input type="text" name="usuario" id="iusuario" title="Nome do Usuario" placeholder="Nome do Usuario" required minlength="5" maxlength="30" autocomplete="username">
-        </p>
-        <p>
-            <label for="isenha">Senha:</label>
-            <input type="password" name="senha" id="isenha" title="Senha de acesso" placeholder="Senha de acesso" required minlength="6" maxlength="8" autocomplete="current-password">
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
+        <fieldset class="dcadastro">
+            <legend>Dados de Cadastro</legend>
+            <p><label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" title="Digite seu nome" placeholder="Digite seu nome" required size="25">
+            </p>
+            <p><label for="iapelido">Apelido:</label>
+                <input type="text" name="apelido" id="iapelido" title="Como devo te chamar?" placeholder="Como devo te chamar?" required>
+            </p>
+            <p><label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" title="Digite seu e-mail" placeholder="Digite seu e-mail" required>
+            </p>
+            <p>
+                <label for="iusuario">Usuario:</label>
+                <input type="text" name="usuario" id="iusuario" title="Nome do Usuario" placeholder="Nome do Usuario" required minlength="5" maxlength="30" autocomplete="username">
+            </p>
+            <p>
+                <label for="isenha">Senha:</label>
+                <input type="password" name="senha" id="isenha" title="Senha de acesso" placeholder="Senha de acesso" required minlength="6" maxlength="8" autocomplete="current-password">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
     </form>    
 </body>
 </html>
