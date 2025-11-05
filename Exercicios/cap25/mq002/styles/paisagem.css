@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/*estilo para em pé*/
+
+body {
+    background-image: url('../img/leandraoDeit.jpg');
+    background-position: left bottom;
+}

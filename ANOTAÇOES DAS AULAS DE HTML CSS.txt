@@ -1,0 +1,25 @@
+ANOTAÇOES DAS AULAS DE HTML CSS
+
+//  usarei para comentários
+|   separa um assunto do outro dentro dos comentários
+(n) pode representar uma variável numero
+
+Na pasta Estudos e o nome da matéria no caso HTML estão salvos os exercícios das aulas pertinentes!
+-----------------------------------------------------------
+
+		  CAPÍTULO 25
+
+AULA 03 - Múltiplas Media Features com CSS
+
+		-----------------------------
+
+			EXERCICIO 03
+
+<link rel="stylesheet" href="esilos/retrato.css" media="screen and (orientation: portrait)">
+<link rel="stylesheet" href="esilos/paisagem.css" media="screen and (orientation: landscape)">
+
+// os adicionais de parâmetros além do screen dizem ao navegador qual folha de estilo ele deve carregar dependendo da orientação do dispositivo no caso de deitado ou em pé
+
+-----------------------------------------------------------
+
+

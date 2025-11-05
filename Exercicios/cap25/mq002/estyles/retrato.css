@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/*estilo para em pé*/
+
+body {
+    background-image: url('../img/leandraoPe.jpg');
+    background-position: center bottom;
+}
