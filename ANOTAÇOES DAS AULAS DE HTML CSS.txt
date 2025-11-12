@@ -7,13 +7,13 @@ ANOTAÇOES DAS AULAS DE HTML CSS
 Na pasta Estudos e o nome da matéria no caso HTML estão salvos os exercícios das aulas pertinentes!
 -----------------------------------------------------------
 
-		  CAPÍTULO 25
+		        CAPÍTULO 25
 
 AULA 03 - Múltiplas Media Features com CSS
 
 		-----------------------------
 
-			EXERCICIO 03
+			EXERCICIO 26 - mq002
 
 <link rel="stylesheet" href="esilos/retrato.css" media="screen and (orientation: portrait)">
 <link rel="stylesheet" href="esilos/paisagem.css" media="screen and (orientation: landscape)">
