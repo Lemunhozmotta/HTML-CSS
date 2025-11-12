@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/*Todas as demais midias*/
+
+/*Tipycal Device Breackpoint
+----------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablete: de 768px até 992px
+Desktop: de 992px até 1200px
+Grande telas: acima de 1200px  
+*/
+
+@media print {
+    * {
+       font-family: 'Courier New', Courier, monospace; 
+    }
+    body {
+        background-image: url(../img/back-print.jpg);/*desnessessario pois nao funciona fundo na impressão*/
+        border: 1px solid black;
+    }
+
+    h1 {
+        color: black;
+        text-shadow: none;
+    }
+    #celular {display: none;}
+    #impressao {display: block;}
+
+    body::after {
+        content: 'Esta pagina foi feita por Leandro Motta.';
+        text-decoration: overline;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {/* TABLET */
+    html {
+        background-image: url(../img/back-tablet.jpg);
+    }
+    #celular {display: none;}
+    #tablet {display: block;}    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {/* DESCKTOP */
+    html {
+        background-image: url(../img/back-pc.jpg);
+    }
+    #tablet {display: none;}
+    #desktop {display: block;}    
+}
+
+@media  screen and (min-width: 1200px) { /* TELAS GRANDES */
+    html {
+        background-image: url(../img/back-tv.jpg);
+    }
+    #desktop {display: none;}
+    #smartv {display: block;}    
+}
