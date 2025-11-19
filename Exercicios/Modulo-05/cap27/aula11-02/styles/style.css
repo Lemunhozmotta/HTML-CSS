@@ -19,6 +19,43 @@ header {
     background-color: black;
     margin-bottom: 20px;
     padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    border: 1px dotted white;
+    width: 85px;
+    margin: 0px 20px;
+}
+
+header h1 {
+    border: 1px dotted white;
+}
+
+header nav {
+    border: 1px dotted white;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header nav a {
+    background-color: cornflowerblue;
+    color: black;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+header nav a:hover {
+    background-color: rgb(137, 194, 22);
+    transition: 0.8s;
 }
 
 main {
@@ -27,7 +64,7 @@ main {
     border-radius: 10px;
     margin: auto;
     padding: 20px;
-    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.542);
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.657);
 }
 
 main h2 {
@@ -42,13 +79,6 @@ main p {
     line-height: 1.5em;
 }
 
-header h1 {
-    border: 1px dotted white;
-}
-
-header nav {
-    border: 1px dotted white;
-}
 
 footer {
     background-color: black;

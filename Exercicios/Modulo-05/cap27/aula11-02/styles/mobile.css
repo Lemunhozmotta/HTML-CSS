@@ -1,0 +1,16 @@
+@charset "UTF8";
+
+header {
+    flex-flow: column wrap;
+}
+
+header nav {
+    flex-flow: column wrap;
+    width: 90vw;
+    margin-top: 10px;
+}
+
+header nav a{
+    margin: 1px;
+    transition: 1s;
+}
