@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* CONFIGURAÇOES GERAIS*/
+
+* {
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+html, body {
+    background-color: rgb(31, 31, 31);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+header img {
+    max-width: 90px;
+    padding: 5px;
+}
+
+menu {
+    background-color: aliceblue;
+}
+
+menu li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px;    
+}
+
+menu a {
+    background-color: steelblue;
+    color: rgb(78, 215, 40);
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+menu a:hover {
+    background-color: rgb(78, 215, 40);
+    color: white;
+    transition: 0.5s;
+}
+
+span#burguer {
+    display: none;
+}
+
+.container main {
+    flex: 1 1 0;
+}
+
+.texto {
+    background-color: white;
+    color: black;
+    max-width: 85vw;
+    height: 100%;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.texto h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-variant: small-caps;
+    padding: 5px 20px;
+}
+
+.texto p {
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.5em;
+    padding: 10px 20px;
+}
+
+footer {
+    background-color: black;
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
+}

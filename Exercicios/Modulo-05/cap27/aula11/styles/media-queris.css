@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/*CONFIGURAÇOES DEMAIS TELAS*/
+
+/*
+Extra Pequeno (xs/celular): 576px
+Pequeno (sm/tablet): 576px a 768px
+Médio (md/laptops): 768px a 992px 
+Grande (lg/desktop): 992px a 1200px
+Extra Grande (xl/telas grandes): 1200px ou mais (1200px, 1280px, 1536px) 
+*/
+
+@media screen and (max-width: 590px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    header img {
+        margin: auto;
+    }
+
+     span#burguer {
+        display: block;
+    }
+
+    menu {
+        background-color: antiquewhite;
+    }
+  
+
+} 
+
+/*
+    .container {
+        display: block;
+    }
+    
+    
+    header img {
+        margin: auto;
+    }
+   
+
+    span#burguer {
+        display: block !important;
+    }
+
+    menu a {
+        display: block;
+    }
+   
+
+    menu {
+        display: none;
+    }
+
+*/
+
