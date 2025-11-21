@@ -12,9 +12,5 @@
     menu li {
         display: inline-block;
     }
-
-    main {
-        max-width: 1024px;
-    }
     
 }

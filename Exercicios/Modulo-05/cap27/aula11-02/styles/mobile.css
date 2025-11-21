@@ -4,18 +4,29 @@ header {
     flex-flow: column wrap;
 }
 
-header nav {
-    display: none;
-    flex-flow: column wrap;
-    width: 90vw;
-    margin-top: 10px;
-}
-
-header nav a{
-    margin: 1px;
-    transition: 1s;
-}
-
 span#burguer {
     display: block;
+    width: 90vw;
+    transition: 0.8s;
+}
+
+header nav {
+    flex-flow: column wrap;
+}
+
+header nav a {
+    width: 90vw;
+    margin: 2px;
+    transition: 0.8s;
+}
+
+/* 2. Esconde o menu de navegação por padrão em mobile */
+header nav#itens {
+    display: none; /* Agora ele começa escondido em mobile */
+    z-index: 1000;
+}
+
+/* 3. ESTADO ATIVO: O menu aparece quando a classe 'active' é adicionada via JS */
+header nav#itens.active {
+    display: flex;
 }
