@@ -58,6 +58,22 @@ header nav a:hover {
     transition: 0.8s;
 }
 
+span#burguer {
+    display: none;
+    background-color: rgb(80, 80, 80);
+    flex-flow: column wrap;
+    text-align: center;
+    width: 90vw;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+span#burguer:hover {
+    background-color: white;
+    color: black;
+    transition: 0.8s;
+}
+
 main {
     background-color: gray;
     width: 80vw;

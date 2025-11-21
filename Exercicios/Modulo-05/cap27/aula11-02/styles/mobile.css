@@ -5,6 +5,7 @@ header {
 }
 
 header nav {
+    display: none;
     flex-flow: column wrap;
     width: 90vw;
     margin-top: 10px;
@@ -13,4 +14,8 @@ header nav {
 header nav a{
     margin: 1px;
     transition: 1s;
+}
+
+span#burguer {
+    display: block;
 }
