@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap 28 - Aula08 - grid</title>
+    
+    <style>
+        div.container {
+            border: 3px solid blue;
+            padding: 5px;
+
+            display: grid;
+            gap: 5px;
+            grid-template: repeat(3, 80px) / 1fr 2fr 1fr;
+            grid-auto-flow: column;
+            grid-auto-rows: 80px;
+            grid-auto-columns: 100px;
+            place-items: normal normal;
+            place-content: normal normal;
+
+        }
+
+        div.items {
+            border: 2px dotted red;
+            padding: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="items">A</div>
+        <div class="items">B</div>
+        <div class="items">C</div>
+        <div class="items">D</div>
+        <div class="items">E</div>
+        <div class="items">F</div>
+        <div class="items">G</div>
+        <div class="items">H</div>
+        <div class="items">I</div>
+        <div class="items">J</div>
+    </div>
+</body>
+</html>

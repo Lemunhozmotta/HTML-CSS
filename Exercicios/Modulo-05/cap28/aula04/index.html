@@ -9,9 +9,22 @@
         div.container {
             border: 3px solid blue;
             display: grid;
-            grid-template-columns: auto 100px auto;
+            width: 400px;
+            height: 400px;
+            /*
+            grid-template-columns: 100px 100px 100px;
             grid-template-rows: 100px 50px 100px;
+            */
+            grid-template: 50px 100px 50px / 50px 100px 50px;
             gap: 5px;
+            /*
+            align-items: stretch;
+            justify-items: stretch;
+            align-content: center;
+            justify-content: center;
+            */
+            place-items: stretch stretch;
+            place-content: center center;
         }
 
         div.item {
@@ -30,8 +43,7 @@
         <div class="item">D</div>
         <div class="item">E</div>
         <div class="item">F</div>
-        <div class="item">G</div> 
-        <div class="item">H</div>
+        <div class="item">G</div>
     </div>    
 </body>
 </html>
